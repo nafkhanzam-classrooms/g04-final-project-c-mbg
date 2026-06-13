@@ -1,5 +1,3 @@
-# Nge-nebakYuk - Game Tebak Gambar Multiplayer
-
 ## Anggota Kelompok
 
 | Nama Lengkap | NRP |
@@ -7,6 +5,17 @@
 | Mahendra Agung Darmawan | 5053251032 |
 | Umi Lailatul Khotimah | 5025241062 |
 | Nashwa Aulia Putri Diansyah | 5025241064 |
+
+## Link Youtube (Unlisted)
+Link ditaruh di bawah ini
+```
+
+```
+
+## Penjelasan Program
+
+## Screenshot Hasil
+
 
 **Deskripsi Pembagian Tugas:**
 - **Mahendra (Backend & Networking):** Bertanggung jawab membangun server TCP Socket dari nol, mengimplementasikan protokol *WebSocket Handshake*, mengatur *multithreading* klien, serta sistem sinkronisasi/penyebaran data gambar dan obrolan secara *real-time*.
