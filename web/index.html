@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Gambar Keren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="glass-panel active">
+        <h1>Tebak Gambar</h1>
+        <p>Masukkan namamu untuk bergabung!</p>
+        <div class="input-group">
+            <input type="text" id="server-ip" placeholder="IP Server (Biarkan 127.0.0.1 jika main sendiri)" value="127.0.0.1" autocomplete="off">
+            <input type="text" id="username" placeholder="Namamu..." autocomplete="off">
+            <button id="btn-join">Main Sekarang</button>
+        </div>
+        <p id="login-error"></p>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <header class="glass-panel top-bar">
+            <div class="role-badge" id="role-display">Menebak</div>
+            <div class="word-display" id="word-display">_ _ _ _ _ _</div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <div class="ping-indicator" id="ping-display" style="font-size: 1rem; color: #4facfe; font-weight: 600;">Ping: -- ms</div>
+                <div class="timer" id="timer-display">30s</div>
+            </div>
+        </header>
+
+        <main>
+            <aside class="glass-panel scoreboard">
+                <h2>Peringkat</h2>
+                <ul id="players-list">
+                    <!-- Players dynamically added -->
+                </ul>
+            </aside>
+
+            <section class="glass-panel canvas-container">
+                <canvas id="drawing-board" width="800" height="600"></canvas>
+                <div class="canvas-overlay" id="overlay">Giliran Orang Lain Menggambar</div>
+            </section>
+
+            <aside class="glass-panel chat-container">
+                <h2>Obrolan</h2>
+                <div class="chat-messages" id="chat-messages">
+                </div>
+                <div class="chat-input-group">
+                    <input type="text" id="chat-input" placeholder="Tebak kata..." autocomplete="off">
+                    <button id="btn-send">Kirim</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
