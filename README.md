@@ -14,6 +14,16 @@ https://youtu.be/m-o_zk4wI5s
 
 ## Penjelasan Program
 
+- **protocol.py** – Implementasi protokol WebSocket (handshake, framing) serta logika permainan (penugasan peran, timer).
+- **game.py** – Refaktor `protocol.py` dengan penambahan callback ketika timer habis.
+- **words.py** – Memuat kamus kata dari `words.txt` dan menyediakan `get_random_word()` untuk pemilihan kata acak.
+- **client_handler.py** – Menangani tiap koneksi klien: verifikasi nama, menerima & mengirim pesan JSON, mengatur alur permainan per pemain.
+- **network.py** – Helper untuk broadcasting state (gambar, chat, timer) ke semua klien secara thread‑safe.
+- **players.py** – Struktur data pemain dan fungsi manajemen skor serta status.
+- **main.py** – Entry‑point server: membuat socket, menerima klien, mem‑spawn thread handler, menginisialisasi ronde pertama.
+- **web/** – Frontend berbasis HTML, CSS & JavaScript yang membuka WebSocket ke server, menampilkan kanvas gambar, chat, timer, dan scoreboard.
+- **words.txt** – Daftar kata default bila file tidak tersedia.
+
 ## Screenshot Hasil
 
 
