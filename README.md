@@ -4,8 +4,9 @@
 ## Anggota Kelompok
 | Nama           | NRP        | Kelas     |
 | ---            | ---        | ----------|
-|                |            |           |
-|                |            |           |
+| Mahendra Agung Darmawan                | 5025241032           | PROGJAR C          |
+| Umi Lailatul Khotimah               | 5025241062           | PROGJAR C           |
+| Nashwa Aulia Putri Diansyah               | 5025241064       |  PROGJAR C          |
 
 ## Link Youtube (Unlisted)
 Link ditaruh di bawah ini
